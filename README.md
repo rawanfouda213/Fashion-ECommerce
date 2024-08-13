@@ -32,3 +32,7 @@ The Fashion E-Commerce Project consists of the following pages:
 **Additional Technologies**:
 - Responsive design for optimal viewing across devices
 - Dynamic content loading and manipulation using JavaScript
+
+
+https://github.com/user-attachments/assets/7cebbd07-4773-43cd-91e6-0fb7d21687f5
+
