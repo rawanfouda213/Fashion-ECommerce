@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Amatic+SC:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <script src="./Bootstrap/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="./Bootstrap/bootstrap-5.3.2-dist/css/bootstrap.css" />
+  <link href="./Bootstrap/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./main.css">
+
+</head>
+
+<body>
+  <!--*nav bar -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="./home.html" class="logo d-flex align-items-center me-auto me-lg-0">
+        <h1>Fashion<span>.</span></h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="./section3.html" class="active">Sale</a></li>
+          <li><a href="#menu">Tops</a></li>
+          <li><a href="#events">Dresses</a></li>
+          <li><a href="#chefs">Skirts</a></li>
+          <li><a href="#gallery">Jumpsuits</a></li>
+          <li>
+            <div class="shopping">
+              <img src="./img/shopping.svg">
+              <span class="quantity">0</span>
+            </div>
+          </li>
+          <li><a href="./home.html" class="active" id="username-display"></a></li>
+          <li><a href="/signIn&signUp.html"><i class="bi bi-box-arrow-right"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!--*discount circle -->
+  <div class="container-fluid sec3">
+    <div class="row">
+      <div class="col-m-6">
+        <div class="circle">
+          <p class="circle-text">Discount</p>
+          <h3 class="circle-text2">Summer 2024</h3>
+          <h5 class="circle-text">
+            <span>Sale</span>
+            <span class="sale-percentage">50%</span>
+          </h5>
+        </div>
+        <div class="discount__countdown" id="countdown-time">
+          <span id="days">00</span> <span>Days</span>
+          <span id="hours">00</span> <span>Hours</span>
+          <span id="minutes">00</span> <span>Minutes</span>
+          <span id="seconds">00</span> <span>Seconds</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--* search bar  -->
+  <div class="search-bar">
+    <input id="myinput" type="text" class="form-control search-input" placeholder="Search" onkeyup="search()">
+  </div>
+
+  <!--*imges -->
+  <!-- <div class="container">
+    <div class="row justify-content-between mt-4">
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/14.png" class="card-img-top" alt="Image 5">
+          <h5 class="card-title ms-5">Short Jumpsuit</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$800.00</strike> <b>$589.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="/Pages/moreinfo.html" class="btn btn-primary mb-5" target="_blank"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/15.png" class="card-img-top" alt="Image 11">
+          <h5 class="card-title ms-5">Pink Skirt</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$600.00</strike> <b>$499.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="/Pages/moreinfo.html" class="btn btn-primary mb-5" target="_blank"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/12.png" class="card-img-top" alt="Image 12">
+          <h5 class="card-title ms-5">Floral Dress</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$580.00</strike> <b>$369.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/1.png" class="card-img-top" alt="Image 1">
+          <h5 class="card-title ms-5">Sleeve Red Dress</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$248.00</strike> <b>$169.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-between">
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/7.png" class="card-img-top" alt="Image 7">
+          <h5 class="card-title ms-5">Green Flats</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$980.00</strike> <b>$669.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/4.png" class="card-img-top" alt="Image 4">
+          <h5 class="card-title ms-5">Black Shoulder Shirt</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$215.00</strike> <b>$199.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/8.png" class="card-img-top" alt="Image 8">
+          <h5 class="card-title ms-5">Beige Skirt</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$250.00</strike> <b>$199.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/6.jpg" class="card-img-top" alt="Image 6">
+          <h5 class="card-title ms-5">Apricot Hoodie</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$710.00</strike> <b>$589.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-between mb-5">
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/9.png" class="card-img-top" alt="Image 9">
+          <h5 class="card-title ms-5">Green Short Jumpsuit</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$700.00</strike> <b>$569.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/10.png" class="card-img-top" alt="Image 10">
+          <h5 class="card-title ms-5">Gray Long Jumpsuit</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$270.00</strike> <b>$209.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/2.png" class="card-img-top" alt="Image 2">
+          <h5 class="card-title ms-5">Beige Sweater</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$100.00</strike> <b>$50.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/3.jpg" class="card-img-top" alt="Image 3">
+          <h5 class="card-title ms-5">Sweater Vest</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$300.00</strike> <b>$250.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/13.png" class="card-img-top" alt="Image 13">
+          <h5 class="card-title ms-5">Floral Blue Top</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$200.00</strike> <b>$179.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/16.png" class="card-img-top" alt="Image 13">
+          <h5 class="card-title ms-5">Black Top</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$800.00</strike> <b>$669.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/17.png" class="card-img-top" alt="Image 13">
+          <h5 class="card-title ms-5">Beige Top</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$500.00</strike> <b>$400.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 p-2">
+        <div class="card">
+          <img src="/img/best/18.png" class="card-img-top" alt="Image 13">
+          <h5 class="card-title ms-5">Black Short Jacket</h5>
+          <div class="thumb-content ms-5">
+            <p class="item-price"><strike>$400.00</strike> <b>$369.00</b></p>
+            <a href="#" class="btn btn-primary mb-5">Add to Cart</a>
+            <a href="#" class="btn btn-primary mb-5"> more info</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+  <div class="container">
+    <div class="list">
+
+    </div>
+
+  </div>
+  <div class="card">
+    <h1 class="card-h1">Card</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+      <div class="total">0</div>
+      <div class="closeShopping">Close</div>
+    </div>
+  </div>
+
+
+<script src="/JS/countdown.js"></script>
+<script src="/JS/cart.js"></script>
+<script src="/JS/slider.js"></script>
+</body>
+
+</html>
