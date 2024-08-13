@@ -1,5 +1,5 @@
 # 💥 Fashion E-Commerce Project
-The Fashion E-Commerce Project is a comprehensive and responsive web application built using HTML, CSS, JavaScript, and Bootstrap. It provides a seamless shopping experience for users, allowing them to browse, select, and purchase fashion items.
+The Fashion E-Commerce Project is a comprehensive and responsive web application built using HTML, CSS, JavaScript, and Bootstrap. It provides a seamless shopping experience for users, allowing them to browse, select,and purchase fashion items.
 
 ## Features
 The Fashion E-Commerce Project consists of the following pages:
